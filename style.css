@@ -33,7 +33,7 @@ main {
     
 }
 
-descricao {
+.descricao {
     margin-bottom: 2.5rem;
 }
 
@@ -43,7 +43,7 @@ descricao {
     font-size: 1.5625rem;
 }
 
-descricao p {
+.descricao p {
     font-size: 0.8125rem;
     color: var(--gray-600);
    
@@ -52,6 +52,8 @@ descricao p {
 .input-box {
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .input-box div {
@@ -60,7 +62,6 @@ descricao p {
     align-items: center;
     gap: 0.5rem;
     margin-bottom: 1rem;
-    border: 1px solid red;
 }
 
 .login label {
@@ -70,7 +71,7 @@ descricao p {
 }
 
 .login input {
-    padding: 1 rem 0.75rem;
+    padding: 1rem 0.75rem;
     border: 1px solid var(--gray-200);
     border-radius: o.25rem;
     color: var(--gray-800);
@@ -81,7 +82,7 @@ descricao p {
 }
 
 .login input:hover, 
-.login input: focus {
+.login input:focus {
     outline: 1px solid var(--purple);
 }
 
@@ -118,6 +119,23 @@ descricao p {
 .login > p a {
     font-weight: 700;
     font-size: 1rem;
+}
+
+@media(min-width: 1000px) {
+    header {
+        background: none;
+        justify-content: flex-start;
+        padding-inline: 7rem;
+        }
+
+        header img {
+            width: 10rem;
+        }
+
+        main {
+            padding-inline: 7rem;
+        }
+    
 }
 
 
